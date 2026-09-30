@@ -1,0 +1,15 @@
+{
+  "name": "offline-sample",
+  "documents": [
+    {"id": "doc-alpha", "title": "Alpha", "text": "The alpha service launched in 2024. It runs in Dublin."},
+    {"id": "doc-beta", "title": "Beta", "text": "Beta is a semantic search system. It stores evidence in documents."},
+    {"id": "doc-gamma", "title": "Gamma", "text": "Gamma is not covered by the service policy."}
+  ],
+  "questions": [
+    {"id": "factual-1", "type": "factual", "question": "When did alpha launch?", "expected_evidence": ["doc-alpha"], "gold_answer": "2024"},
+    {"id": "semantic-1", "type": "semantic", "question": "What kind of system is beta?", "expected_evidence": ["doc-beta"], "gold_answer": "semantic search system"},
+    {"id": "multi-hop-1", "type": "multi_hop", "question": "Where does the service launched in 2024 run?", "expected_evidence": ["doc-alpha"]},
+    {"id": "ambiguous-1", "type": "ambiguous", "question": "What does it run?", "expected_evidence": []},
+    {"id": "unanswerable-1", "type": "unanswerable", "question": "Who founded gamma?", "expected_evidence": [], "gold_abstained": true}
+  ]
+}

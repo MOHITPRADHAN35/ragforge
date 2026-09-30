@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+*.env
+!*.env.example
+*.db
+evaluation-reports/
+dist/
+build/
+*.egg-info/
+*.zip
+
+# Frontend
+node_modules/
+frontend/node_modules/
+.output/
+frontend/.output/
+.nitro/
+frontend/.nitro/
+.tanstack/
+frontend/.tanstack/
+.lovable/
